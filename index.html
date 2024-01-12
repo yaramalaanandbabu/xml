@@ -7,8 +7,8 @@
     </head> 
     <body>
     <div class="paral">
-     <p style="text-align: right; font-size: 20">Parallel and Distributed Data Mining 131</p>   
-     <br>
+     
+
         <p style="font-size: 21"><i>Figure 12: Parallel decomposition of DBSCAN</i></p>
         <center>
         <img style="width: 400px; height: 600px;" src="fig%2012.png">
@@ -31,13 +31,12 @@ this kind of immediate pruning. But if we send all neighborhood sets for each qu
 time, we end up in receiving exponentially many results in the Master.<br>āā
 A simple filtering heuristics allows the Slaves to send each result once at most. The
 heuristic is reported in Figure 12 as a modified pseudo-code for a FilteringSlave module.</p><br><br>
-        <P style="calibri">Copyright © 2003, Idea Group Inc. Copying or distributing in print or electronic forms without written
-permission of Idea Group Inc. is prohibited.</P>
-    </div><br><br>
+        
+    </div><br>
 <div class="paral">
-   <p2 style="font-size: 20">132 Coppola & Vanneschi</p2><br>
+   
     
-    <br>
+    
     <p style="font-size: 21"><i>Figure 13: The SkIE code of parallel DBSCAN.</i></p>
      <center>
         <img style="width: 400px; height: 400px;" src="fig%2013.png">
@@ -59,13 +58,12 @@ structures. It is thus easy to exploit any improvement or customization of the d
 management that may speed up the computation. Further investigation is needed to
 evaluate the practical scalability limits of our heuristics at higher degrees of parallelism,
 and possibly to devise better ones. To improve the filtering ratio, more informed
-heuristics could exploit non-local information gained by communications among the</p><br><br>
-   <P style="calibri">Copyright © 2003, Idea Group Inc. Copying or distributing in print or electronic forms without written
-permission of Idea Group Inc. is prohibited.</P><br>     
+heuristics could exploit non-local information gained by communications among the</p><br>
+       
     </div>
     <div class="paral">
-    <p style="text-align: right; font-size: 20">Parallel and Distributed Data Mining 133</p>
-        <br>
+    
+        
         <p style="font-size: 21"><i>Figure 15: Average number of points per query answer, versus parallelism and epsilon.</i></p>
         <center>
         <img style="width: 550px; height: 500px;" src="fig%2015.png">
@@ -85,17 +83,16 @@ the amount of replication, and may be the only choice in a DDM setting. Using in
 a parallel file system to store the data is not subject to the same limitations, and may
 actually increase the performance of the accesses, thanks to the fact that the size of
 parallel file system caches increases with the size of the employed parallel architecture.</p>
-<p style="font-size: 35"><i>Related Work</i></p><br>
+<p style="font-size: 35"><i>Related Work</i></p>
 <P style="font-size: 19">We compare our approach with the PDBSCAN one described in Xu, Jager and
 Kriegel (1999). That work also addressed the issue of speeding up the region queries by
 means of parallel computation. They develop a Master-Slave scheme in which the Slaves
 independently run a slightly modified version of sequential DBSCAN on separate
 partitions of the multi-dimensional input space. The data are held in a distributed version
 of the R*-Tree, which partitions the data pages of the R*-Tree (the leaves) among</P><br>
-        <P style="calibri">Copyright © 2003, Idea Group Inc. Copying or distributing in print or electronic forms without written permission of Idea Group Inc. is prohibited.</P><br> 
+         
         </div>
         <div class="paral">
-        <p style="font-size: 20">134 Coppola & Vanneschi</p><br>
         <p style="font-size: 19">available processors and fully replicates the index structure (the interior part of the tree).
 This approach relies on the same constraint we exploited, i.e., that the spatial structure
 is essentially read-only. Slaves have to communicate with each other to answer spatial
@@ -138,11 +135,10 @@ structured parallel applications. We used
 processors, their technology, the bandwidth and latency of the interconnection network
 result in variable communication/computation ratios for the same problem on different
 </p><br>
-<P style="calibri">Copyright © 2003, Idea Group Inc. Copying or distributing in print or electronic forms without written permission of Idea Group Inc. is prohibited.</P><br>
+
         </div>
     <div class="paral">
-     <p style="text-align: right; font-size: 20">Parallel and Distributed Data Mining 135</p>   
-     <br>
+
      <p style="font-size: 21"><i>Figure 16: Apriori efficiency versus parallelism ( * = centralized I/O ).
 </i></p>
     <center>
@@ -169,7 +165,7 @@ of these two programs is a performance loss when the input is too small. We can 
 this behavior in terms of the startup phase that the farm parallelism has to go through,
 when computing a stream of tasks, before reaching the steady state. For the Apriori
 prototype, small data files mean few partitions (we cannot make them small because of</p>
- <P style="calibri">Copyright © 2003, Idea Group Inc. Copying or distributing in print or electronic forms without written permission of Idea Group Inc. is prohibited.</P><br><br>   
+   
         </div> 
     </body>
     
